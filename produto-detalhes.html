@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes do Produto - UsinAI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="favicon.png" type="image/png">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+        .loading-spinner {
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <!-- Loading Overlay -->
+    <div id="loadingOverlay" class="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center">
+        <div class="bg-white p-8 rounded-lg shadow-xl text-center">
+            <div class="loading-spinner rounded-full h-16 w-16 border-b-2 border-gray-900 mx-auto mb-4"></div>
+            <p class="text-lg font-semibold">Carregando produto...</p>
+        </div>
+    </div>
+
+    <!-- Header/Navbar (same as index.html) -->
+    <header class="bg-black text-white py-4 px-6 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="https://i.ibb.co/h1gbT7F6/logo-usinai.png" alt="UsinAI Logo" class="h-10">
+            </div>
+            <nav class="hidden md:flex space-x-8">
+                <a href="index.html" class="hover:text-gray-400 transition">Início</a>
+                <a href="solucoes.html" class="hover:text-gray-400 transition">Soluções</a>
+                <a href="sobre.html" class="hover:text-gray-400 transition">Sobre Nós</a>
+                <a href="contato.html" class="hover:text-gray-400 transition">Contato</a>
+            </nav>
+            <button class="md:hidden text-xl">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Product Details Section -->
+    <section class="py-16 px-6">
+        <div class="container mx-auto">
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                <div class="md:flex">
+                    <div class="md:w-1/2">
+                        <img id="productImage" src="" alt="Imagem do Produto" class="w-full h-full object-cover">
+                    </div>
+                    <div class="md:w-1/2 p-8">
+                        <h1 id="productTitle" class="text-3xl font-bold mb-4"></h1>
+                        <p id="productDescription" class="text-gray-600 mb-6"></p>
+                        <div class="mb-6">
+                            <h3 class="text-xl font-bold mb-2">Especificações Técnicas</h3>
+                            <ul id="productSpecs" class="list-disc pl-5 space-y-1 text-gray-600"></ul>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span id="productPrice" class="text-2xl font-bold text-gray-800"></span>
+                            <a href="contato.html" class="bg-gray-800 hover:bg-gray-900 text-white px-6 py-3 rounded-lg font-semibold transition">Solicitar Orçamento</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (same as index.html) -->
+    <footer class="bg-black text-white py-12 px-6">
+        <div class="container mx-auto">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Usin<span class="text-gray-400">AI</span></h3>
+                    <p class="text-gray-400">Revolucionando a indústria com inteligência artificial desde 2023.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Links Rápidos</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition">Início</a></li>
+                        <li><a href="solucoes.html" class="text-gray-400 hover:text-white transition">Soluções</a></li>
+                        <li><a href="sobre.html" class="text-gray-400 hover:text-white transition">Sobre Nós</a></li>
+                        <li><a href="contato.html" class="text-gray-400 hover:text-white transition">Contato</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Contato</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><i class="fas fa-phone mr-2"></i> (11) 99999-9999</li>
+                        <li><i class="fas fa-envelope mr-2"></i> contato@usinai.com.br</li>
+                        <li><i class="fas fa-map-marker-alt mr-2"></i> São Paulo, SP</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Redes Sociais</h4>
+                    <div class="flex space-x-4">
+                        <a href="https://linkedin.com/company/usinai" class="text-gray-400 hover:text-white transition text-xl"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://instagram.com/usinai" class="text-gray-400 hover:text-white transition text-xl"><i class="fab fa-instagram"></i></a>
+                        <a href="https://facebook.com/usinai" class="text-gray-400 hover:text-white transition text-xl"><i class="fab fa-facebook"></i></a>
+                        <a href="https://youtube.com/usinai" class="text-gray-400 hover:text-white transition text-xl"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-500">
+                <p>© 2023 UsinAI. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Show loading overlay initially
+        document.getElementById('loadingOverlay').classList.remove('hidden');
+
+        // Sample product data (would normally come from API/database)
+        const products = {
+            '1': {
+                title: 'CNC IA-3000',
+                description: 'Centro de usinagem com auto-ajuste e detecção de falhas em tempo real. Nossa máquina CNC inteligente utiliza algoritmos de IA para otimizar processos de usinagem, reduzindo tempo e custos operacionais.',
+                price: 'R$ 250.000',
+                image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80',
+                specs: [
+                    'Precisão de 0.001mm',
+                    '6 eixos de movimento',
+                    'Sistema de auto-calibração',
+                    'Detecção de ferramentas desgastadas',
+                    'Integração com sistemas ERP'
+                ]
+            },
+            '2': {
+                title: 'Robô IA-X200',
+                description: 'Braço robótico com aprendizagem por reforço para tarefas complexas. Capaz de aprender novos movimentos e adaptar-se a diferentes linhas de produção sem necessidade de reprogramação.',
+                price: 'R$ 180.000',
+                image: 'https://images.unsplash.com/photo-1597852074816-d933c7d2b988?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80',
+                specs: [
+                    'Alcance de 2.5 metros',
+                    'Carga máxima de 15kg',
+                    'Visão computacional integrada',
+                    'Aprendizado por demonstração',
+                    'Colaborativo (ISO/TS 15066)'
+                ]
+            },
+            '3': {
+                title: '3D IA-PRO',
+                description: 'Impressora 3D industrial com otimização automática de parâmetros. Analisa automaticamente o modelo 3D e ajusta parâmetros de impressão para melhor qualidade e eficiência.',
+                price: 'R$ 320.000',
+                image: 'https://images.unsplash.com/photo-1624395213043-fa2e123b2656?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80',
+                specs: [
+                    'Área de construção 500x500x500mm',
+                    'Múltiplos materiais (PLA, ABS, PETG, Nylon)',
+                    'Resolução de camada até 0.05mm',
+                    'Sistema de recuperação de falhas',
+                    'Monitoramento em tempo real'
+                ]
+            },
+            '4': {
+                title: 'Injetora IA-500',
+                description: 'Máquina de injeção plástica com controle inteligente de parâmetros. Ajusta automaticamente pressão, temperatura e velocidade de injeção para cada material e peça.',
+                price: 'R$ 280.000',
+                image: 'https://images.unsplash.com/photo-1581093450021-4a7360e0fd2a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80',
+                specs: [
+                    'Força de fechamento 500 toneladas',
+                    'Controle de temperatura por zonas',
+                    'Sistema de dosagem automática',
+                    'Detecção de falhas em tempo real',
+                    'Integração com sistemas MES'
+                ]
+            }
+        };
+
+        // Load product data based on URL parameter
+        const urlParams = new URLSearchParams(window.location.search);
+        const productId = urlParams.get('id');
+        
+        if (productId && products[productId]) {
+            const product = products[productId];
+            
+            // Update page content
+            document.title = `${product.title} - UsinAI`;
+            document.getElementById('productTitle').textContent = product.title;
+            document.getElementById('productDescription').textContent = product.description;
+            document.getElementById('productPrice').textContent = product.price;
+            document.getElementById('productImage').src = product.image;
+            document.getElementById('productImage').alt = product.title;
+            
+            // Add specs to list
+            const specsList = document.getElementById('productSpecs');
+            product.specs.forEach(spec => {
+                const li = document.createElement('li');
+                li.textContent = spec;
+                specsList.appendChild(li);
+            });
+            
+            // Hide loading overlay after short delay
+            setTimeout(() => {
+                document.getElementById('loadingOverlay').classList.add('hidden');
+            }, 800);
+        } else {
+            // Redirect to home if product not found
+            window.location.href = 'index.html';
+        }
+    </script>
+</body>
+</html>
