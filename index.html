@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UsinAI - Máquinas Industriais com IA</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #000000 0%, #555555 50%, #ffffff 100%);
+        }
+        .machine-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <!-- Header/Navbar -->
+    <header class="bg-black text-white py-4 px-6 shadow-lg animate__animated animate__fadeInDown">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="https://i.ibb.co/h1gbT7F6/logo-usinai.png" alt="UsinAI Logo" class="h-10">
+            </div>
+            <nav class="hidden md:flex space-x-8">
+                <a href="index.html" class="hover:text-gray-400 transition">Início</a>
+                <a href="solucoes.html" class="hover:text-gray-400 transition">Soluções</a>
+                <a href="sobre.html" class="hover:text-gray-400 transition">Sobre Nós</a>
+                <a href="contato.html" class="hover:text-gray-400 transition">Contato</a>
+            </nav>
+            <button class="md:hidden text-xl">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="gradient-bg text-white py-32 px-6 animate__animated animate__fadeIn">
+        <div class="container mx-auto flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">Revolucionando a Indústria com <span class="text-black">Inteligência Artificial</span></h2>
+                <p class="text-xl mb-8">Soluções inteligentes para um mundo eficiente.</p>
+                <div class="flex space-x-4">
+                    <a href="contato.html?demo=1" class="bg-gray-500 hover:bg-gray-600 text-white px-6 py-3 rounded-lg font-semibold transition">Solicitar Demonstração</a>
+                    <a href="solucoes.html" class="bg-white hover:bg-gray-200 text-black px-6 py-3 rounded-lg font-semibold transition">Conheça Nossas Soluções</a>
+                </div>
+            </div>
+           
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-16 px-6 bg-white animate__animated animate__fadeIn">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12">Nossas <span class="text-gray-500">Vantagens</span></h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-6 rounded-xl shadow-md machine-card transition duration-300 animate__animated animate__fadeInUp" style="animation-delay: 0.2s">
+                    <div class="text-gray-500 text-4xl mb-4">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">IA Aprendizagem Contínua</h3>
+                    <p class="text-gray-600">Nossas máquinas melhoram continuamente com o tempo, adaptando-se às suas necessidades.</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-xl shadow-md machine-card transition duration-300 animate__animated animate__fadeInUp" style="animation-delay: 0.4s">
+                    <div class="text-gray-500 text-4xl mb-4">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Eficiência Máxima</h3>
+                    <p class="text-gray-600">Redução de custos e aumento de produtividade com processos otimizados por IA.</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-xl shadow-md machine-card transition duration-300 animate__animated animate__fadeInUp" style="animation-delay: 0.6s">
+                    <div class="text-gray-500 text-4xl mb-4">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Segurança Inteligente</h3>
+                    <p class="text-gray-600">Sistemas de segurança preditiva que previnem acidentes antes que ocorram.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="py-16 px-6 bg-gray-100 animate__animated animate__fadeIn">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12">Nossas <span class="text-gray-500">Máquinas</span></h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg machine-card transition duration-300 animate__animated animate__fadeInUp" style="animation-delay: 0.2s">
+                    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" 
+                         alt="Máquina CNC Inteligente" 
+                         class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">CNC IA-3000</h3>
+                        <p class="text-gray-600 mb-4">Centro de usinagem com auto-ajuste e detecção de falhas em tempo real.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold text-gray-500">A partir de R$ 250.000</span>
+                            <a href="produto-detalhes.html?id=1" class="bg-gray-500 hover:bg-gray-600 text-white px-4 py-2 rounded-lg text-sm transition">Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg machine-card transition duration-300 animate__animated animate__fadeInUp" style="animation-delay: 0.4s">
+                    <img src="https://images.unsplash.com/photo-1597852074816-d933c7d2b988?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" 
+                         alt="Robô Industrial IA" 
+                         class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Robô IA-5000</h3>
+                        <p class="text-gray-600 mb-4">Robô industrial com visão computacional e aprendizado de máquina integrado.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold text-gray-500">A partir de R$ 350.000</span>
+                            <a href="produto-detalhes.html?id=2" class="bg-gray-500 hover:bg-gray-600 text-white px-4 py-2 rounded-lg text-sm transition">Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-12 px-6">
+        <div class="container mx-auto">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Usin<span class="text-gray-400">AI</span></h3>
+                    <p class="text-gray-400">Revolucionando a indústria com inteligência artificial desde 2023.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Links Rápidos</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition">Início</a></li>
+                        <li><a href="solucoes.html" class="text-gray-400 hover:text-white transition">Soluções</a></li>
+                        <li><a href="sobre.html" class="text-gray-400 hover:text-white transition">Sobre Nós</a></li>
+                        <li><a href="contato.html" class="text-gray-400 hover:text-white transition">Contato</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Contato</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><i class="fas fa-phone mr-2"></i> (15) 98817-1796</li>
+                        <li><i class="fas fa-envelope mr-2"></i> contato@usinai.com.br</li>
+                        <li><i class="fas fa-map-marker-alt mr-2"></i> Sorocaba, SP</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Redes Sociais</h4>
+                    <div class="flex space-x-4">
+                        <a href="https://linkedin.com/company/usinai" class="text-gray-400 hover:text-white transition text-xl"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://instagram.com/usinai" class="text-gray-400 hover:text-white transition text-xl"><i class="fab fa-instagram"></i></a>
+                        <a href="https://facebook.com/usinai" class="text-gray-400 hover:text-white transition text-xl"><i class="fab fa-facebook"></i></a>
+                        <a href="https://youtube.com/usinai" class="text-gray-400 hover:text-white transition text-xl"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-500">
+                <p>© 2023 UsinAI. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple animation for demonstration
+        document.querySelectorAll('.machine-card').forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                card.querySelector('i')?.classList.add('animate-bounce');
+            });
+            card.addEventListener('mouseleave', () => {
+                card.querySelector('i')?.classList.remove('animate-bounce');
+            });
+        });
+
+        // Trigger animations when page loads
+        document.addEventListener('DOMContentLoaded', () => {
+            const animatedElements = document.querySelectorAll('.animate__animated');
+            animatedElements.forEach(el => {
+                el.style.opacity = '0';
+            });
+
+            setTimeout(() => {
+                animatedElements.forEach(el => {
+                    el.style.opacity = '1';
+                });
+            }, 100);
+        });
+    </script>
+</body>
+</html>
