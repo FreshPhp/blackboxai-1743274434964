@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato | UsinAI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="favicon.png" type="image/png">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #000000 0%, #555555 50%, #ffffff 100%);
+        }
+        .input-field:focus {
+            border-color: #1a365d;
+            box-shadow: 0 0 0 3px rgba(26, 54, 93, 0.2);
+        }
+        #map {
+            height: 300px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <!-- Header/Navbar -->
+    <header class="bg-black text-white py-4 px-6 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="https://i.ibb.co/h1gbT7F6/logo-usinai.png" alt="UsinAI Logo" class="h-10">
+            </div>
+            <nav class="hidden md:flex space-x-8">
+                <a href="index.html" class="hover:text-gray-400 transition">Início</a>
+                <a href="solucoes.html" class="hover:text-gray-400 transition">Soluções</a>
+                <a href="sobre.html" class="hover:text-gray-400 transition">Sobre Nós</a>
+                <a href="contato.html" class="text-blue-400 font-semibold hover:text-blue-300 transition">Contato</a>
+            </nav>
+            <button class="md:hidden text-xl">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="gradient-bg text-white py-20 px-6">
+        <div class="container mx-auto text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6">Fale Conosco</h1>
+            <p class="text-xl max-w-3xl mx-auto">Estamos prontos para transformar sua operação industrial com inteligência artificial</p>
+        </div>
+    </section>
+
+    <!-- Contact Content -->
+    <section class="py-16 px-6 bg-white">
+        <div class="container mx-auto max-w-6xl">
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- Contact Form -->
+                <div>
+                    <h2 class="text-3xl font-bold mb-8">Envie sua <span class="text-blue-600">Mensagem</span></h2>
+                    <form class="space-y-6">
+                        <div>
+                            <label for="nome" class="block text-gray-700 font-medium mb-2">Nome Completo</label>
+                            <input type="text" id="nome" class="w-full px-4 py-3 border border-gray-300 rounded-lg input-field focus:outline-none focus:border-blue-500 transition">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-gray-700 font-medium mb-2">E-mail</label>
+                            <input type="email" id="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg input-field focus:outline-none focus:border-blue-500 transition">
+                        </div>
+                        <div>
+                            <label for="telefone" class="block text-gray-700 font-medium mb-2">Telefone</label>
+                            <input type="tel" id="telefone" class="w-full px-4 py-3 border border-gray-300 rounded-lg input-field focus:outline-none focus:border-blue-500 transition">
+                        </div>
+                        <div>
+                            <label for="mensagem" class="block text-gray-700 font-medium mb-2">Mensagem</label>
+                            <textarea id="mensagem" rows="5" class="w-full px-4 py-3 border border-gray-300 rounded-lg input-field focus:outline-none focus:border-blue-500 transition"></textarea>
+                        </div>
+                        <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition w-full">Enviar Mensagem</button>
+                    </form>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h2 class="text-3xl font-bold mb-8">Nossos <span class="text-blue-600">Contatos</span></h2>
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="text-blue-600 text-2xl mr-4 mt-1">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-1">Endereço</h3>
+                                <p class="text-gray-600">Av. Itavuvu 6515<br>Sorocaba - SP<br>CEP: 18074-030</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="text-blue-600 text-2xl mr-4 mt-1">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-1">Telefone</h3>
+                                <p class="text-gray-600">(15) 98817-1796<br>Seg-Sex: 8h-18h</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="text-blue-600 text-2xl mr-4 mt-1">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-1">E-mail</h3>
+                                <p class="text-gray-600">contato@usinai.com.br<br>comercial@usinai.com.br</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Map -->
+                    <div class="mt-12">
+                        <h3 class="text-xl font-bold mb-4">Onde Estamos</h3>
+                        <div id="map" class="rounded-lg shadow-md border border-gray-200">
+                            <!-- Map will be loaded via JavaScript -->
+                            <img src="https://maps.googleapis.com/maps/api/staticmap?center=-23.563090,-46.654590&zoom=15&size=600x300&maptype=roadmap&markers=color:red%7C-23.563090,-46.654590&key=YOUR_API_KEY" 
+                                 alt="Mapa da localização" 
+                                 class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-16 px-6 bg-gray-50">
+        <div class="container mx-auto max-w-4xl">
+            <h2 class="text-3xl font-bold text-center mb-12">Perguntas <span class="text-blue-600">Frequentes</span></h2>
+            
+            <div class="space-y-4">
+                <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+                    <h3 class="text-xl font-bold mb-2 flex justify-between items-center">
+                        <span>Qual o tempo de implementação das soluções?</span>
+                        <i class="fas fa-chevron-down text-blue-600"></i>
+                    </h3>
+                    <p class="text-gray-600 hidden">O tempo varia conforme a complexidade do projeto, mas em média nossos sistemas são implementados em 4-8 semanas.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+                    <h3 class="text-xl font-bold mb-2 flex justify-between items-center">
+                        <span>Vocês oferecem suporte técnico?</span>
+                        <i class="fas fa-chevron-down text-blue-600"></i>
+                    </h3>
+                    <p class="text-gray-600 hidden">Sim, oferecemos suporte 24/7 para todas as nossas soluções, com tempo médio de resposta de 2 horas.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+                    <h3 class="text-xl font-bold mb-2 flex justify-between items-center">
+                        <span>Há treinamento para os operadores?</span>
+                        <i class="fas fa-chevron-down text-blue-600"></i>
+                    </h3>
+                    <p class="text-gray-600 hidden">Fornecemos treinamento completo para todas as equipes que utilizarão nossos sistemas, sem custo adicional.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-12 px-6">
+        <div class="container mx-auto">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">UsinAI</h3>
+                    <p class="text-gray-400">Revolucionando a indústria com inteligência artificial.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Links Rápidos</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition">Início</a></li>
+                        <li><a href="solucoes.html" class="text-gray-400 hover:text-white transition">Soluções</a></li>
+                        <li><a href="sobre.html" class="text-gray-400 hover:text-white transition">Sobre Nós</a></li>
+                        <li><a href="contato.html" class="text-blue-400 hover:text-blue-300 transition">Contato</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Contato</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><i class="fas fa-phone mr-2"></i> (15) 98817-1796</li>
+                        <li><i class="fas fa-envelope mr-2"></i> contato@usinai.com.br</li>
+                        <li><i class="fas fa-map-marker-alt mr-2"></i> Sorocaba, SP</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Redes Sociais</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition text-xl"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition text-xl"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition text-xl"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition text-xl"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-500">
+                <p>© 2023 UsinAI. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple FAQ toggle functionality
+        document.querySelectorAll('#faq h3').forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                const icon = question.querySelector('i');
+                
+                answer.classList.toggle('hidden');
+                icon.classList.toggle('fa-chevron-down');
+                icon.classList.toggle('fa-chevron-up');
+            });
+        });
+    </script>
+</body>
+</html>
