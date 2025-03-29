@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nós | UsinAI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="favicon.png" type="image/png">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #000000 0%, #555555 50%, #ffffff 100%);
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -38px;
+            top: 0;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: #1a365d;
+            border: 4px solid #e53e3e;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <!-- Header/Navbar -->
+    <header class="bg-black text-white py-4 px-6 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="https://i.ibb.co/h1gbT7F6/logo-usinai.png" alt="UsinAI Logo" class="h-10">
+            </div>
+            <nav class="hidden md:flex space-x-8">
+                <a href="index.html" class="hover:text-gray-400 transition">Início</a>
+                <a href="solucoes.html" class="hover:text-gray-400 transition">Soluções</a>
+                <a href="sobre.html" class="text-blue-400 font-semibold hover:text-blue-300 transition">Sobre Nós</a>
+                <a href="contato.html" class="hover:text-gray-400 transition">Contato</a>
+            </nav>
+            <button class="md:hidden text-xl">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="gradient-bg text-white py-20 px-6">
+        <div class="container mx-auto text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6">Nossa História</h1>
+            <p class="text-xl max-w-3xl mx-auto">Pioneiros em inteligência artificial aplicada à indústria desde 2018</p>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section class="py-16 px-6 bg-white">
+        <div class="container mx-auto max-w-4xl">
+            <h2 class="text-3xl font-bold text-center mb-12">Nossa <span class="text-blue-600">Jornada</span></h2>
+            
+            <div class="relative pl-12">
+                <!-- Timeline item 1 -->
+                <div class="relative timeline-item mb-12">
+                    <h3 class="text-xl font-bold mb-2">2018 - Fundação</h3>
+                    <p class="text-gray-600">Nascida no coração de São Paulo, a UsinAI começou como um pequeno projeto de pesquisa em IA aplicada à indústria.</p>
+                </div>
+
+                <!-- Timeline item 2 -->
+                <div class="relative timeline-item mb-12">
+                    <h3 class="text-xl font-bold mb-2">2019 - Primeiro Cliente</h3>
+                    <p class="text-gray-600">Implementamos nosso primeiro sistema de automação inteligente em uma fábrica de autopeças.</p>
+                </div>
+
+                <!-- Timeline item 3 -->
+                <div class="relative timeline-item mb-12">
+                    <h3 class="text-xl font-bold mb-2">2020 - Expansão</h3>
+                    <p class="text-gray-600">Ampliamos nossas operações para todo o território nacional com uma equipe de 25 especialistas.</p>
+                </div>
+
+                <!-- Timeline item 4 -->
+                <div class="relative timeline-item">
+                    <h3 class="text-xl font-bold mb-2">2023 - Reconhecimento</h3>
+                    <p class="text-gray-600">Premiada como a startup mais inovadora do setor industrial pelo Prêmio Inovatech.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="py-16 px-6 bg-gray-50">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12">Nosso <span class="text-blue-600">Time</span></h2>
+            
+            <div class="grid md:grid-cols-3 gap-8 justify-items-center">
+                <!-- Team member 1 -->
+                <div class="bg-white p-6 rounded-xl shadow-md text-center">
+                    <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e" 
+                         alt="Carlos Mendes" 
+                         class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
+                    <h3 class="text-xl font-bold">Carlos Mendes</h3>
+                    <p class="text-blue-600 mb-2">CEO & Fundador</p>
+                    <p class="text-gray-600">Engenheiro mecânico com MBA em IA aplicada à indústria.</p>
+                </div>
+
+                <!-- Team member 2 -->
+                <div class="bg-white p-6 rounded-xl shadow-md text-center">
+                    <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80" 
+                         alt="Ana Beatriz" 
+                         class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
+                    <h3 class="text-xl font-bold">Ana Beatriz</h3>
+                    <p class="text-blue-600 mb-2">CTO</p>
+                    <p class="text-gray-600">Doutora em Ciência da Computação com foco em aprendizado de máquina.</p>
+                </div>
+
+                <!-- Team member 3 -->
+                <div class="bg-white p-6 rounded-xl shadow-md text-center">
+                    <img src="https://images.unsplash.com/photo-1581093450021-4a7360e9a9e1" 
+                         alt="Roberto Almeida" 
+                         class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
+                    <h3 class="text-xl font-bold">Roberto Almeida</h3>
+                    <p class="text-blue-600 mb-2">Diretor Industrial</p>
+                    <p class="text-gray-600">20 anos de experiência em automação industrial.</p>
+                </div>
+
+                <!-- Team member 4 -->
+                <div class="bg-white p-6 rounded-xl shadow-md text-center">
+                    <img src="https://images.unsplash.com/photo-1581094271901-8022df4466f9" 
+                         alt="Mariana Costa" 
+                         class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
+                    <h3 class="text-xl font-bold">Mariana Costa</h3>
+                    <p class="text-blue-600 mb-2">Engenheira de IA</p>
+                    <p class="text-gray-600">Especialista em aprendizado de máquina aplicado.</p>
+                </div>
+
+                <!-- Team member 5 -->
+                <div class="bg-white p-6 rounded-xl shadow-md text-center">
+                    <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789" 
+                         alt="Fernando Silva" 
+                         class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
+                    <h3 class="text-xl font-bold">Fernando Silva</h3>
+                    <p class="text-blue-600 mb-2">Gerente de Projetos</p>
+                    <p class="text-gray-600">10 anos liderando implementações industriais.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section class="py-16 px-6 bg-white">
+        <div class="container mx-auto max-w-4xl text-center">
+            <h2 class="text-3xl font-bold mb-8">Nossa <span class="text-blue-600">Missão</span></h2>
+            <p class="text-xl text-gray-700 mb-8">"Transformar a indústria brasileira através de soluções inovadoras de inteligência artificial, tornando os processos mais eficientes, seguros e sustentáveis."</p>
+            
+            <div class="grid md:grid-cols-3 gap-8 mt-12">
+                <div>
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Inovação</h3>
+                    <p class="text-gray-600">Buscamos constantemente novas formas de aplicar IA à indústria.</p>
+                </div>
+                <div>
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Parceria</h3>
+                    <p class="text-gray-600">Trabalhamos lado a lado com nossos clientes.</p>
+                </div>
+                <div>
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Sustentabilidade</h3>
+                    <p class="text-gray-600">Nossas soluções reduzem o impacto ambiental.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-12 px-6">
+        <div class="container mx-auto">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">UsinAI</h3>
+                    <p class="text-gray-400">Revolucionando a indústria com inteligência artificial.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Links Rápidos</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition">Início</a></li>
+                        <li><a href="solucoes.html" class="text-gray-400 hover:text-white transition">Soluções</a></li>
+                        <li><a href="sobre.html" class="text-blue-400 hover:text-blue-300 transition">Sobre Nós</a></li>
+                        <li><a href="contato.html" class="text-gray-400 hover:text-white transition">Contato</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Contato</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><i class="fas fa-phone mr-2"></i> (11) 99999-9999</li>
+                        <li><i class="fas fa-envelope mr-2"></i> contato@usinai.com.br</li>
+                        <li><i class="fas fa-map-marker-alt mr-2"></i> São Paulo, SP</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Redes Sociais</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition text-xl"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition text-xl"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition text-xl"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition text-xl"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-500">
+                <p>© 2023 UsinAI. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
